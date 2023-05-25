@@ -207,3 +207,37 @@ func main() {
 
 ```
 
+
+
+
+
+# Interface
+
+OrderedMap also implements some common interfaces, which will be more convenient when actually using it.
+
+
+
+## fmt.Stringer
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/liushuochen/orderedmap"
+)
+
+func main() {
+	o := orderedmap.New()
+	o.Store("A", "a")
+	o.Store("B", "b")
+
+	fmt.Println(o)
+	// {A: a B: b}
+
+	fmt.Printf("The content of OrderedMap object is: %s\n", o)
+	// The content of OrderedMap object is: {A: a B: b}
+}
+```
+

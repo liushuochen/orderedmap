@@ -1,6 +1,6 @@
-// Copyright 2022 The orderedmap Authors Liu Shuochen. All rights reserved.
-// Use of this source code is governed by a BSD-style
-// license that can be found in the LICENSE file.
+// Copyright 2022 The orderedmap Authors Shuochen Liu. All rights reserved.
+// Use of this source code is governed by a BSD-style.
+// License that can be found in the LICENSE file.
 
 // Package orderedmap defines functions and methods for OrderedMap.
 package orderedmap
@@ -12,7 +12,7 @@ import (
 
 const (
 	// Version defined package `orderedmap` version information.
-	Version = "0.1.2"
+	Version = "0.1.3"
 )
 
 // OrderedMap is like a Go map[interface{}]interface{} but is has order for each key add or delete.

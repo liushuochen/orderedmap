@@ -241,3 +241,29 @@ func main() {
 }
 ```
 
+
+
+## fmt.GoStringer
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/liushuochen/orderedmap"
+)
+
+func main() {
+	o := orderedmap.New()
+	o.Store("A", "a")
+	o.Store("B", "b")
+
+	fmt.Println(o)
+	// {A: a B: b}
+
+	fmt.Printf("The content of OrderedMap object is: %#v\n", o)
+	// The content of OrderedMap object is: {A: a B: b}
+}
+```
+
